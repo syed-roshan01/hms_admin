@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'customers_screen.dart';
+import 'screens/customers_screen.dart';
+import 'screens/manage_drivers_screen.dart';
 import 'drivers_screen.dart';
 import 'driver_collection_screen.dart';
 import 'total_collection_screen.dart';
@@ -75,6 +76,11 @@ class AdminHomeScreen extends StatelessWidget {
               icon: Icons.local_shipping,
               label: "Drivers",
               onTap: () => _navigateTo(context, const DriversScreen()),
+            ),
+            _AdminOptionButton(
+              icon: Icons.manage_accounts,
+              label: "Manage Drivers",
+              onTap: () => _navigateTo(context, const ManageDriversScreen()),
             ),
             _AdminOptionButton(
               icon: Icons.attach_money,
